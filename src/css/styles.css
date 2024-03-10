@@ -23,3 +23,115 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+.hw-title {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  }
+  
+  .gallery {
+      max-width: 1128px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 24px;
+      margin: 0 auto;
+  }
+  
+  .gallery-item {
+  transition: transform 250ms linear;
+  }
+  
+  .gallery-item:hover {
+      transform: scale(105%);
+  }
+  
+  /* ============= FEEDBACK FORM */
+  .feedback-form {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 360px;    
+    margin: 24px;
+  }
+
+  .feedback-input-email {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    background-color: transparent;
+    outline: 0px solid transparent;
+    border: 1px solid #808080;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+  }
+
+  .feedback-input-email:hover{
+    border: 1px solid #000;
+    
+  }
+
+  .feedback-field-label {
+    display: block;    
+  }
+
+  .feedback-message-area {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 80px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    padding: 16px;
+    resize: none;
+    outline: 0px solid transparent;
+    border: 1px solid #808080;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+  }
+
+  .feedback-message-area:hover {
+    border: 1px solid #000;
+  }
+
+  .feedback-form-button {
+    width: 50px;
+    border-radius: 8px;
+    border: 0px;
+    padding: 8px 16px;
+    width: 95px;
+    height: 40px;
+    background-color: #4E75FF;
+    margin-top: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+
+  }
+
+  .feedback-form-button:hover {
+    background-color: #6C8CFF;
+  }
