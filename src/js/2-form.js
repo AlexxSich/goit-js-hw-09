@@ -7,8 +7,8 @@ form.addEventListener("submit", formSubmitHandler );
 form.addEventListener("input", formInputHandler);
 
 function formInputHandler(event) {
-    const email = form.elements.email.value.trim();
-    const msg = textarea.value.trim();
+    const email = form.elements.email.value
+    const msg = textarea.value
     const formData = JSON.stringify({email, msg});
     localStorage.setItem(STORAGE_KEY, formData)
 }
@@ -16,7 +16,6 @@ function formInputHandler(event) {
 const dataFromLocalStorage = localStorage.getItem(STORAGE_KEY) ?? "";
 try {
         const jsnData = JSON.parse(dataFromLocalStorage)
-
         form.elements.email.value = jsnData.email;
         textarea.value = jsnData.msg;
 } catch {
@@ -25,15 +24,15 @@ try {
 
 function formSubmitHandler(event) {
     event.preventDefault();
-    const email = form.elements.email.value
-    const msg = textarea.value
+    const email = form.elements.email.value.trim()
+    const msg = textarea.value.trim()
 
     if(email === "" || msg === "") {
    alert("Please fill-in all fields") 
 } else {
-console.log({email, msg})
-event.currentTarget.reset()
-localStorage.clear()
+    console.log({email, msg});
+    event.currentTarget.reset();
+    localStorage.removeItem(STORAGE_KEY);
 }
 }
 
